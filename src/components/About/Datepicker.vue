@@ -1,0 +1,19 @@
+<template>
+  <div>
+
+    <label for="example-datepicker">Choose a date</label>
+<!--    <b-form-datepicker id="example-datepicker" v-model="value" class="mb-2"></b-form-datepicker>-->
+    <el-date-picker v-model="value" type="date" />
+    <p>Value: '{{ value }}'</p>
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      value: ''
+    }
+  }
+}
+</script>
