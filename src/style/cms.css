@@ -1,0 +1,353 @@
+.grid {
+  display: grid;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.align-end {
+  align-items: end;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.flex-column{
+  flex-direction: column;
+}
+.grid-cols-11 {
+  grid-template-columns: repeat(11, minmax(0, 1fr)) !important;
+}
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+}
+.col-span-1 {
+  grid-column: span 1 / span 1 !important;
+}
+.col-span-4 {
+  grid-column: span 4 / span 4 !important;
+}
+ .col-span-5 {
+   grid-column: span 5 / span 5 !important;
+ }
+.col-span-10 {
+  grid-column: span 10 / span 10 !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-end {
+  text-align: end !important;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem !important;
+}
+
+.mt-5 {
+  margin-top: 1.25rem !important;
+}
+.ml-5 {
+  margin-left: 1.25rem !important;
+}
+.mr-5 {
+  margin-right: 1.25rem !important;
+}
+.mb-3 {
+  margin-bottom: 0.75rem !important;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.mx-5 {
+  margin-left: 1.25rem !important;
+  margin-right: 1.25rem !important;
+}
+.pr-5 {
+  padding-right: 1.25rem !important;
+}
+.pl-5 {
+  padding-left: 1.25rem !important;
+}
+.pb-5 {
+  padding-bottom: 1.25rem !important;
+}
+.pt-5 {
+  padding-top: 1.25rem !important;
+}
+.px-5 {
+  padding-left: 1.25rem !important;
+  padding-right: 1.25rem !important;
+}
+ .px-3 {
+   padding-left: 0.75rem !important;
+   padding-right: 0.75rem !important;
+ }
+.pl-2 {
+  padding-left: 0.5rem !important;
+}
+.pl-3 {
+  padding-left: 0.75rem !important;
+}
+.justify-center {
+  justify-content: center !important;
+}
+.h-24 {
+  height: 6rem !important;
+}
+
+.cms--button-add {
+  height: 35px;
+  line-height: 10px;
+  width: 70px;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  background-color: #b3d9ff;
+}
+.cms--button-remove {
+  height: 35px;
+  line-height: 10px;
+  width: 70px;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffb3ff;
+}
+
+p {
+  margin: 0;
+}
+.border-gray-400 {
+  border-color: rgba(156, 163, 175, 1) !important;
+}
+.border-r {
+  border-right-width: 1px !important;
+  border-right-style: solid !important;
+}
+.border-t {
+  border-top-width: 1px !important;
+  border-top-style: solid !important;
+}
+#app {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+   .T48B_56 {
+     font-family: "BIZ-UDGothic", serif;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 48px;
+     line-height: 56px;
+   }
+
+.T48M_56 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.T48R_56 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.T30B_38 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.T30M_38 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.T30R_38 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.T24B_32 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.T24M_32 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.T24R_32 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.T20B_28 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T20M_28 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T20R_28 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T18B_26 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 26px;
+}
+
+.T18M_26 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.T18R_26 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.T16B_24 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.T16M_24 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.T16R_24 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.T14B_20 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.T14M_20 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.T14R_20 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.T12B_16 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.T12M_16 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.T12R_16 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.T10R_14 {
+  font-family: "BIZ-UDGothic", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgba(239, 68, 68, var(--tw-text-opacity)) !important;
+}
+ .cms--button-remove, .cms--button-remove.is-disabled {
+  height: 35px;
+  line-height: 10px;
+  width: 70px;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffb3ff;
+}

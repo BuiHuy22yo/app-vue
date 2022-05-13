@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App'
 import './plugins'
+import './components/ui'
 import router from './router'
 import store from './store'
 // import ElementUI from 'element-ui'

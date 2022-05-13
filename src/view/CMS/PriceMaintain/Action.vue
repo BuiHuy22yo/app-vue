@@ -60,7 +60,9 @@ export default {
         localStorage.setItem('date_price_maintain', this.params.date)
         this.$router.push({ name: 'CreatePriceMaintain' })
       })
-    }
+    },
+    handleUsingOldData () {},
+    handleUpdate () {}
   }
 }
 </script>

@@ -13,4 +13,5 @@ export default {
 
 <style>
 @import 'style/index.css';
+@import 'style/cms.css';
 </style>

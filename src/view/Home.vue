@@ -1,6 +1,6 @@
 <template>
   <div class="page-home">
-    <div class="header__navigation flex-1 flex justify-end items-center">
+    <div class="header__navigation ">
       <h1>Hello world</h1>
       <button type="button" @click="handleLogout">Logout</button>
       <div class="demo">{{message}}</div>

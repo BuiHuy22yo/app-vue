@@ -42,7 +42,7 @@ const routes = [
     component: About
   },
   {
-    path: '/price-maintenance/action',
+    path: '/price-maintenance',
     name: 'ActionPriceMaintain',
     component: ActionPriceMaintain
   },
