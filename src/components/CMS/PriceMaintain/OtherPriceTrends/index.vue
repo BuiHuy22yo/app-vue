@@ -1,7 +1,7 @@
 <template>
   <div class="pl-5">
     <div class="  inner" v-for="(item, index) in data.data" :key="index" :class="index ? 'mt-5 pt-5 border-t border-gray-400': ''">
-      <OrtherTrend :data="item" ></OrtherTrend>
+      <OrtherTrend :data="item.data" :index="index" :lastIndex="data.data.length - 1" :item="data.item"></OrtherTrend>
     </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="pl-5">
     <div v-for="(item, index) in data.data" :key="index" :class="!index ? 'mt-5' : ''">
-      <ConditionItem :data="item" :index="index" :lastIndex="data.data.length - 1" :item="data.item"/>
+      <ConditionItem :data="item.data" :index="index" :lastIndex="data.data.length - 1" :item="data.item"/>
     </div>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   props: {
     data: {
       type: Object,
-      default: null
+      default: () => ({})
     }
   },
   data () {

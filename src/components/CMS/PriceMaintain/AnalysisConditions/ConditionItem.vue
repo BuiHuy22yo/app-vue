@@ -2,18 +2,18 @@
   <div class="grid grid-cols-11 mb-5 cms-condition">
     <div class="col-span-5 px-5">
       <div class="header border border-gray-400 px-2 py-1">
-        <el-input class="el-input--custom"  placeholder="タイトル" />
+        <el-input v-model="content[0].title" class="el-input--custom"  placeholder="タイトル" />
       </div>
       <div class="header border-l border-r border-b border-gray-400 px-2 py-1 h-24">
-        <el-input  class="el-textarea--custom" placeholder="コメント" resize="none" :rows="4" type="textarea" />
+        <el-input v-model="content[0].comments" class="el-textarea--custom" placeholder="コメント" resize="none" :rows="4" type="textarea" />
       </div>
     </div>
     <div class="col-span-5 px-5">
       <div class="header border border-gray-400 px-2 py-1">
-        <el-input class="el-input--custom" placeholder="タイトル" />
+        <el-input v-model="content[1].title" class="el-input--custom" placeholder="タイトル" />
       </div>
       <div class="header border-l border-r border-b border-gray-400 px-2 py-1 h-24">
-        <el-input class="el-textarea--custom" placeholder="コメント" resize="none" :rows="4" type="textarea" />
+        <el-input v-model="content[1].comments" class="el-textarea--custom" placeholder="コメント" resize="none" :rows="4" type="textarea" />
       </div>
     </div>
     <div class="col-span-1 flex align-end justify-space-between flex-column mt-5 px-5">
@@ -57,8 +57,8 @@ export default {
   // emits: ['addNewLine', 'removeLine'],
   props: {
     data: {
-      type: Object,
-      default: null
+      type: Array,
+      default: () => []
     },
     lastIndex: {
       type: Number,
@@ -74,9 +74,25 @@ export default {
     }
   },
   data () {
-    return {}
+    return {
+      content: [
+        {
+          title: '',
+          comments: ''
+        },
+        {
+          title: '',
+          comments: ''
+        }
+      ]
+    }
   },
-
+  created () {
+    this.data[0].title = this.content[0].title
+    this.data[0].comments = this.content[0].comments
+    this.data[1].title = this.content[1].title
+    this.data[1].comments = this.content[1].comments
+  },
   methods: {
     addNewLine () {
       EventBus.$emit('addNewLine', this.index + 1, this.item)

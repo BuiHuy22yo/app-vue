@@ -4,6 +4,9 @@
 .flex {
   display: flex;
 }
+.flex-col {
+  flex-direction: column;
+}
 .align-center {
   align-items: center;
 }
@@ -13,14 +16,23 @@
 .justify-space-between {
   justify-content: space-between;
 }
+.justify-start {
+  justify-content: start;
+}
 .flex-column{
   flex-direction: column;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
 .grid-cols-11 {
   grid-template-columns: repeat(11, minmax(0, 1fr)) !important;
 }
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
 }
 .col-span-1 {
   grid-column: span 1 / span 1 !important;
@@ -84,6 +96,10 @@
    padding-left: 0.75rem !important;
    padding-right: 0.75rem !important;
  }
+ .py-5 {
+   padding-top: 1.25rem !important;
+   padding-bottom: 1.25rem !important;
+ }
 .pl-2 {
   padding-left: 0.5rem !important;
 }
@@ -95,6 +111,12 @@
 }
 .h-24 {
   height: 6rem !important;
+}
+.w-24 {
+  width: 6rem !important;
+}
+.w-20 {
+  width: 5rem !important;
 }
 
 .cms--button-add {
@@ -350,4 +372,25 @@ p {
   border: none;
   border-radius: 3px;
   background-color: #ffb3ff;
+}
+
+.app-input-file .app-input-file__inner {
+   height: 32px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: flex;
+   align-items: center;
+ }
+.height-24 {
+  height: 24px;
+}
+img {
+  width: 100%;
+}
+ .el-button-file-custom button {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

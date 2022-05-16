@@ -2,8 +2,8 @@
   <div class="grid grid-cols-11">
     <div class="col-span-10">
       <div class="grid grid-cols-12">
-        <div v-for="(item, index) in data.data" :key="index"
-             class="col-span-4 border-r border-gray-400 px-5 border-s">
+        <div v-for="(item, index) in data" :key="index" :class="data.length - 1 === index ? '' : 'border-r border-gray-400' "
+             class="col-span-4  px-5 border-s">
           <ItemOrtherTrend :data="item"/>
         </div>
       </div>
@@ -24,7 +24,7 @@
           v-if="(!index && lastIndex === 0) || index === lastIndex"
           class="absolute cms--button-add bottom-1 bottom-2"
           size="small"
-          @click="addNewLine(index, data.item)"
+          @click="addNewLine(index, item)"
         >
           行追加
         </el-button>
@@ -34,7 +34,7 @@
           class="ml-0 absolute bottom-0 cms--button-remove"
           :disabled="lastIndex === 0"
           size="small"
-          @click="removeLine(index, data.item)"
+          @click="removeLine(index, item)"
         >
           行削除
         </el-button>
@@ -50,15 +50,27 @@ export default {
   components: { ItemOrtherTrend },
   props: {
     data: {
-      type: Object,
+      type: Array,
+      default: () => []
+    },
+    index: {
+      type: Number,
+      default: undefined
+    },
+    lastIndex: {
+      type: Number,
+      default: 0
+    },
+    item: {
+      type: Number,
       default: null
     }
   },
-  computed: {
-    lastIndex () {
-      return this.$props.data.data.length - 1
-    }
-  },
+  // computed: {
+  //   // lastIndex () {
+  //   //   return this.$props.data.data.length - 1
+  //   // }
+  // },
 
   methods: {
     addNewLine (index, item) {

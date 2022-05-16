@@ -8,7 +8,7 @@ import Product from '@/view/Product.vue'
 import Checkout from '@/components/Checkout.vue'
 import ActionPriceMaintain from '@/view/CMS/PriceMaintain/Action.vue'
 import CreatePriceMaintain from '@/view/CMS/PriceMaintain/Create.vue'
-
+import Preview from '@/view/CMS/Preview/index.vue'
 import { isLoggedIn } from '@/utils/auth'
 
 Vue.use(Router)
@@ -50,7 +50,11 @@ const routes = [
     path: '/price-maintenance/create',
     name: 'CreatePriceMaintain',
     component: CreatePriceMaintain
-  }
+  },
+  {
+    path: '/price-maintenance/preview',
+    component: Preview,
+    name: 'PreviewPriceMainatin' }
 ]
 const router = new Router({
   mode: 'history',

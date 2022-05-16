@@ -6,7 +6,7 @@
         <p>ファイル</p>
         <div class="ml-5 mb-5">
           <app-input-file
-            v-model="item.filePath"
+            v-model="filePath"
             accept="image/jpg, image/jpeg, image/png"
             button-name="参照"
             class="el-button-file-custom"
@@ -16,7 +16,7 @@
         </div>
         <p>出典</p>
         <div class="ml-5">
-          <el-input v-model="item.source" size="small" type="text" />
+          <el-input v-model="source" size="small" type="text" />
         </div>
       </div>
 
@@ -37,6 +37,16 @@ export default {
       type: Array,
       default: () => []
     }
+  },
+  data () {
+    return {
+      filePath: null,
+      source: ''
+    }
+  },
+  created () {
+    this.data.filePath = this.filePath
+    this.data.source = this.source
   }
 }
 </script>
