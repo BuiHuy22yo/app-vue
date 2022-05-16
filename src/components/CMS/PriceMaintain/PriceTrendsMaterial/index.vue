@@ -6,7 +6,7 @@
         <p>ファイル</p>
         <div class="ml-5 mb-5">
           <app-input-file
-            v-model="filePath"
+            v-model="data[index].filePath"
             accept="image/jpg, image/jpeg, image/png"
             button-name="参照"
             class="el-button-file-custom"
@@ -16,10 +16,9 @@
         </div>
         <p>出典</p>
         <div class="ml-5">
-          <el-input v-model="source" size="small" type="text" />
+          <el-input v-model="data[index].source" size="small" type="text" />
         </div>
       </div>
-
       <div class="col-span-1 text-end pt-5 px-5" style="padding-top: 44px;">
         <el-button class="cms--button-add" size="small" @click="$router.push({ name: 'PreviewPriceMainatin' })">
           表示

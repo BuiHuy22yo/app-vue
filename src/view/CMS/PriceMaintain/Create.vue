@@ -104,7 +104,19 @@ export default {
 
     this.creatorInfo = `${formatDateYMDChart(new Date())}   建設企画部`
     this.editorInfo = `${formatDateYMDChart(new Date())}   建設企画部`
-    this.dataDefaultRow = [
+    this.dataDefaultRow1 = [
+      {
+        comment: '',
+        col: 1,
+        title: ''
+      },
+      {
+        comment: '',
+        col: 2,
+        title: ''
+      }
+    ]
+    this.dataDefaultRow2 = [
       {
         comment: '',
         col: 1,
@@ -120,11 +132,33 @@ export default {
       item: 1,
       data: [
         {
-          data: this.dataDefaultRow,
+          data: [
+            {
+              comment: '',
+              col: 1,
+              title: ''
+            },
+            {
+              comment: '',
+              col: 2,
+              title: ''
+            }
+          ],
           row: 1
         },
         {
-          data: this.dataDefaultRow,
+          data: [
+            {
+              comment: '',
+              col: 1,
+              title: ''
+            },
+            {
+              comment: '',
+              col: 2,
+              title: ''
+            }
+          ],
           row: 2
         }
       ]
@@ -133,11 +167,11 @@ export default {
       item: 2,
       data: [
         {
-          data: this.dataDefaultRow,
+          data: this.dataDefaultRow2,
           row: 1
         },
         {
-          data: this.dataDefaultRow,
+          data: this.dataDefaultRow2,
           row: 2
         }
       ]
@@ -236,24 +270,25 @@ export default {
         sourceName: ''
       }
     ]
-    this.OtherTrend = {
-      item: 3,
-      data: [
-        {
-          data: this.dataDefaultOtherTrend
-        }
-      ]
-    }
+    this.OtherTrend = [
+      {
+        data: this.dataDefaultOtherTrend,
+        item: 3
+      },
+      {
+        data: this.dataDefaultOtherTrend,
+        item: 3
+      }
+    ]
   },
-
   mounted () {
     EventBus.$on('addNewLine', (lenght, item) => {
       if (item === 1) {
-        this.AnalysisListIten1.data.push({ data: this.dataDefaultRow,
+        this.AnalysisListIten1.data.push({ data: this.dataDefaultRow1,
           row: lenght + 1})
       } else if (item === 2) {
         this.AnalysisListIten2.data.push({
-          data: this.dataDefaultRow,
+          data: this.dataDefaultRow2,
           row: lenght + 1
         })
       } else if (item === 3) {
